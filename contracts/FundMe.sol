@@ -17,8 +17,12 @@ contract FundMe {
     // Type Declarations
     using PriceConverter for uint256;
 
+    // storage variable: s_variableName
+    // immutable variable: i_variableName
+    // constant variable: VARIABLE_NAME
+
     // State variables
-    uint256 public constant MINIMUM_USD = 50 * 10**18;
+    uint256 public constant MINIMUM_USD = 5 * 10**18;
     address private immutable i_owner;
     address[] private s_funders;
     mapping(address => uint256) private s_addressToAmountFunded;

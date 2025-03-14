@@ -1,4 +1,6 @@
 {
+  "name": "blockchain-learning-4-hardhat-fund-me",
+  "auther": "Sadanand Jaiswal",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "hardhat": "^2.22.19",
@@ -7,5 +9,13 @@
   "dependencies": {
     "@chainlink/contracts": "^1.3.0",
     "solhint": "^5.0.5"
+  },
+  "scripts": {
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat deploy --network localhost",
+    "test:staging": "npx hardhat test --network sepolia",
+    "lint": "npx solhint contracts/*.sol",
+    "lint:fix": "npx solhint contracts/*.sol --fix",
+    "coverage": "npx hardhat coverage"
   }
 }
